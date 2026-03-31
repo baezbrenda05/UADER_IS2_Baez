@@ -1,4 +1,4 @@
-# Ingeniería de Software II
+<img width="451" height="477" alt="Captura de pantalla 2026-03-31 132159" src="https://github.com/user-attachments/assets/6b592494-0c12-4ecb-a5bd-e8b85ab2e3a6" /># Ingeniería de Software II
 
 ## TP N°1 - Gestión de la Configuración y Python
 
@@ -41,7 +41,8 @@
 
 ## Figura
 
-![Numeros Primos](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Primes-vs-composites.svg/320px-Primes-vs-composites.svg.png)
+![Ejecucion primes](doc/Captura de pantalla 2026-03-31 132159.png)
+
 
 ---
 
