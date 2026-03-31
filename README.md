@@ -41,7 +41,7 @@
 
 ## Figura
 
-![Ejecucion primes](doc/Captura de pantalla 2026-03-31 132159.png)
+![Ejecucion primes](doc/ejecucion_primes.png)
 
 
 ---
