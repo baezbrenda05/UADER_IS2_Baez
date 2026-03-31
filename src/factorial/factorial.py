@@ -20,9 +20,10 @@ def factorial(num):
             num -= 1
         return fact 
 
-if len(sys.argv) == 0:
-   print("Debe informar un número!")
-   sys.exit()
-num=int(sys.argv[1])
+if len(sys.argv) > 1:
+    num = int(sys.argv[1])
+else:
+    num = int(input("Ingrese un numero: "))
+
 print("Factorial ",num,"! es ", factorial(num)) 
 
