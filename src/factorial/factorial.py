@@ -26,12 +26,23 @@ else:
     entrada = input("Ingrese un numero o rango: ")
 
 if "-" in entrada:
-    desde, hasta = entrada.split("-")
-    desde = int(desde)
-    hasta = int(hasta)
+
+    if entrada.startswith("-"):
+        desde = 1
+        hasta = int(entrada[1:])
+
+    elif entrada.endswith("-"):
+        desde = int(entrada[:-1])
+        hasta = 60
+
+    else:
+        desde, hasta = entrada.split("-")
+        desde = int(desde)
+        hasta = int(hasta)
 
     for i in range(desde, hasta+1):
         print("Factorial ", i, "! es ", factorial(i))
+
 else:
     num = int(entrada)
-    print("Factorial ",num,"! es ", factorial(num))
+    print("Factorial ", num, "! es ", factorial(num))
