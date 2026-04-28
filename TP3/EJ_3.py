@@ -4,15 +4,15 @@ class Hamburguesa:
 
 class HamburguesaMostrador(Hamburguesa):
     def entregar(self):
-        print("Hamburguesa entregada en mostrador")
+        print("Hamburguesa entregada en mostrador - Tiempo estimado: 5 minutos")
 
 class HamburguesaRetiro(Hamburguesa):
     def entregar(self):
-        print("Hamburguesa retirada por el cliente")
+        print("Hamburguesa retirada por el cliente - Tiempo estimado: 10 minutos")
 
 class HamburguesaDelivery(Hamburguesa):
     def entregar(self):
-        print("Hamburguesa enviada por delivery")
+        print("Hamburguesa enviada por delivery - Tiempo estimado: 30 minutos")
 
 class HamburguesaFactory:
     def crear(self, metodo):

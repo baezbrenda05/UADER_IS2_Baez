@@ -7,15 +7,19 @@ class Factura:
 
 class FacturaResponsable(Factura):
     def generar(self):
-        print(f"Factura A - IVA Responsable - Importe: {self.importe}")
+        descuento = self.importe * 0.10
+        total = self.importe - descuento
+        print(f"Factura A - IVA Responsable - Importe: {self.importe} - Descuento 10%: {descuento} - Total: {total}")
 
 class FacturaNoInscripto(Factura):
     def generar(self):
-        print(f"Factura B - IVA No Inscripto - Importe: {self.importe}")
+        descuento = self.importe * 0.05
+        total = self.importe - descuento
+        print(f"Factura B - IVA No Inscripto - Importe: {self.importe} - Descuento 5%: {descuento} - Total: {total}")
 
 class FacturaExento(Factura):
     def generar(self):
-        print(f"Factura C - IVA Exento - Importe: {self.importe}")
+        print(f"Factura C - IVA Exento - Importe: {self.importe} - Sin descuento - Total: {self.importe}")
 
 class FacturaFactory:
     def crear(self, condicion, importe):
