@@ -1,5 +1,4 @@
 class TipoZombie:
-    """Estado intrínseco compartido (flyweight) - modelo, animación y stats base"""
     def __init__(self, nombre, modelo, animacion, velocidad, danio):
         self.nombre = nombre
         self.modelo = modelo
