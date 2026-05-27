@@ -1,0 +1,11 @@
+import json
+import sys
+
+jsonfile = sys.argv[1]
+jsonkey = sys.argv[2] if len(sys.argv) > 2 else "token1"
+
+with open(jsonfile, "r") as myfile:
+    data = myfile.read()
+
+obj = json.loads(data)
+print(str(obj[jsonkey]))
