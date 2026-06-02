@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+"""
+getJason.py - Lector de archivos JSON con patrón Singleton.
+copyright UADERFCyT-IS2©2024 todos los derechos reservados.
+
+Uso:
+    python3 getJason.py <archivo.json> [clave]
+    python3 getJason.py -v
+"""
 import json
 import sys
 from abc import ABC, abstractmethod
